@@ -3,7 +3,7 @@ const app = express(); //! Criação do servidor para uso adjacente;
 const porta = process.env.PORT || 8000; //! Caso não encontre uma porta aberta se direcione para a 8000 disponível;
 
 app.get("/api", (req, res) => {
-    res.send({mensagem: "Miau"});
+    res.send({mensagem: "API funcionando corretamente :)"});
 }); //! Rota base da api que envia um objeto JSON e se conecta diretamente com o Front;
 
 app.listen(porta, () => {
