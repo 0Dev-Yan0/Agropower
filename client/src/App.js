@@ -1,7 +1,6 @@
 import React, {Component} from "react"; //! Biblioteca do react a ser instalada com o pacote de "Component";
 import logo from "./logo.svg";
 import "./App.css";
-import { Home } from "./pages/home";
 
 //! Basicamente a função abaixo se trata de classificar o "App" como uma extensão de que o "Component" faz;
 class App extends Component {
@@ -32,7 +31,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Home/>
+        <header className="App-header">
+          <p>{this.state.resposta}</p>
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Bem vindo ao React!</h1>
+        </header>
       </div>
     );
   };
