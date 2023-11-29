@@ -1,5 +1,6 @@
 :root {
     --cor-header: #05715E;
+    --cor-fonte: #FFEDBF;
 }
 
 *{
@@ -29,6 +30,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 3px;
+    color: var(--cor-fonte);
 }
 .geral_header{
     display: flex;
