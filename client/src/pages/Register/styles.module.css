@@ -6,6 +6,8 @@ body {
     background-color: var(--cor-fundo);
 }
 
+.titulo {}
+
 .titulo_principal {
     color: #155300;
     text-align: center;
@@ -16,7 +18,7 @@ body {
     line-height: normal;
     margin-top: 38px;
     padding: 16px;
-    text-align:center;
+    text-align: center;
 }
 
 .titulo_secundario {
@@ -40,6 +42,7 @@ body {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
 .container {
     width: 250px;
     height: 40px;
@@ -50,3 +53,55 @@ body {
     box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.25);
     margin-top: 12px;
 }
+
+.titulo {
+    color: #FFEDBF;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 21px;
+}
+
+.container::placeholder {
+    color: #403008;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 16px;
+}
+
+.container {
+    color: #403008;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.date {
+    color: #403008;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.verifica_cadastro {
+    color: #72F644;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+input[type="date"]::before {
+    content: '\00a0'; /* Adiciona um espaço não quebrável como conteúdo antes do texto */
+    padding-right: 10px; /* Adiciona padding apenas no lado direito do texto */
+  }

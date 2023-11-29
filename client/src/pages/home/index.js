@@ -16,9 +16,7 @@ export default function Home() {
                     </div>
                     <div>
                         <h1 className={styles.titulo_video}>Veja como utilizar nosso aplicativo para melhorar sua produção e venda.</h1>
-                        <iframe width="300" height="215"
-                            src="https://www.youtube.com/embed/UlqRvh_KEKw.">
-                        </iframe>
+                        <iframe width="300" height="215" src="https://www.youtube.com/embed/UlqRvh_KEKw." />
                     </div>
                 </div>
             </body>
