@@ -1,19 +1,27 @@
-import Logo from '../../assets/logo.svg'
-import './styles.css'
+import styles from './styles.module.css'
 
-export function Home() {
+import Header from '../components/header'
+
+export default function Home() {
     return (
         <div>
-            <header >
-                <div className='geral_header'>
-                    <img src={Logo} className='img_logo'></img>
-                    <div className='cadastro'>
-                        <a>Login</a>
-                        <h1 className='separacao'>|</h1>
-                        <a>Resgistrar</a>
+            <Header />
+            <body>
+                {/* geral */}
+                <div >
+                    {/* titulos  */}
+                    <div>
+                        <h1 className={styles.titulo_principal}>Bem vindo ao futuro do agronegócio.</h1>
+                        <h2 className={styles.titulo_secundario}>Introdução a Transformação Digital do campo</h2>
+                    </div>
+                    <div>
+                        <h1 className={styles.titulo_video}>Veja como utilizar nosso aplicativo para melhorar sua produção e venda.</h1>
+                        <iframe width="300" height="215"
+                            src="https://www.youtube.com/embed/UlqRvh_KEKw.">
+                        </iframe>
                     </div>
                 </div>
-            </header>
+            </body>
         </div>
     )
 }
