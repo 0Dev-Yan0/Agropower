@@ -11,3 +11,5 @@ rotaApi.post("/", (req,res) => {
 });
 
 module.exports = rotaApi;
+
+//! Modulação principal para conexão com a API [ desmonstração ];
