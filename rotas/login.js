@@ -7,3 +7,5 @@ rotaLogin.get("/", (req,res) => {
 });
 
 module.exports = rotaLogin;
+
+//! Propósito de conferência ao banco de dados para permitir a entrada do usuário;

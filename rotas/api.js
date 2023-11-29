@@ -6,4 +6,8 @@ rotaApi.get("/", (req,res) => {
     res.send({ mensagem: "API funcionando corretamente :)" });
 });
 
+rotaApi.post("/", (req,res) => {
+    res.send({ mensagem: "Mensagem" });
+});
+
 module.exports = rotaApi;

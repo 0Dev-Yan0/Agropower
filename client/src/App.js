@@ -16,6 +16,7 @@ class App extends Component {
     if (response.status !== 200) {
       throw Error(body.mensagem);
     };
+
     console.log(body.mensagem);
     return body;
   }; //! A conexão com a API em si pelo uso assíncrono do fetch na rota "/api" [ futuramente será bem alterado essa parte ] e retornando as respostas [ mensagens vindas delas no "res" ] como JSON;
