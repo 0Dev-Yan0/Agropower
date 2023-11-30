@@ -9,12 +9,12 @@ export default function Register() {
             <HeaderCadastro />
             <body>
                 {/* geral */}
-                <div >
+                <div  >
                     {/* titulos  */}
                     <div>
-                        <h1 className={styles.titulo}>Cadastro</h1>
+                        <h1 className={styles.titulo_principal}>Cadastro</h1>
                     </div>
-                    <div>
+                    <div className={styles.geral}>
                             <input className={styles.container} placeholder='Insira seu nome...'></input>
                             <input className={styles.container} type='date'></input>
                             <input className={styles.container} placeholder='CEP'></input>
