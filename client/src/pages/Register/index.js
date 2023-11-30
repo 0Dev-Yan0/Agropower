@@ -12,7 +12,7 @@ export default function Register() {
                 <div  >
                     {/* titulos  */}
                     <div>
-                        <h1 className={styles.titulo}>Cadastro</h1>
+                        <h1 className={styles.titulo_principal}>Cadastro</h1>
                     </div>
                     <div className={styles.geral}>
                             <input className={styles.container} placeholder='Insira seu nome...'></input>
