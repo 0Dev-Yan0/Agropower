@@ -1,0 +1,51 @@
+:root {
+    --cor-header: #346229;
+    --cor-fonte: #FFEDBF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: var(--cor-header);
+    height: 77px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.img_logo {
+    width: 47px;
+    height: 47px;
+    margin-left: 10px;
+}
+
+.separacao {
+    font-size: 15px;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: var(--cor-fonte);
+}
+
+.geral_header {
+    display: grid;
+    grid-template-columns: 95% 5%;
+    gap: 30%;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFEDBF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
