@@ -1,7 +1,9 @@
 import React, {Component} from "react"; //! Biblioteca do react a ser instalada com o pacote de "Component";
 import logo from "./logo.svg";
 import "./App.css";
-import Register from './pages/Register'
+import Register from './pages/Register';
+import Localizacao from "./pages/localizacao";
+import PerfilCliente from "./pages/Perfil/Perfil_cliente";
 import {
   BrowserRouter,
   Routes,
@@ -15,6 +17,8 @@ function App(){
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route index path="/register" element={<Register />}/>
+            <Route index path="/localizacao" element={<Localizacao/>}/>
+            <Route index path="/perfil_cliente" element={<PerfilCliente/>}/>
           </Routes>
         </BrowserRouter>
     );
