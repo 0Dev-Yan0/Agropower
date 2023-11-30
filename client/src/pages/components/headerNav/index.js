@@ -7,9 +7,13 @@ export default function HeaderNav() {
             <div className={styles.geral_header}>
                 <img src={Logo} className={styles.img_logo}></img>
                 <div className={styles.cadastro}>
-                    <a>Login</a>
+                    <a>Insumos</a>
                     <h1 className={styles.separacao}>|</h1>
-                    <a>Resgistrar</a>
+                    <a>Alimentos</a>
+                    <h1 className={styles.separacao}>|</h1>
+                    <a>Entrega</a>
+                    <h1 className={styles.separacao}>|</h1>
+                    <a>Perfil</a>
                 </div>
             </div>
         </header>
