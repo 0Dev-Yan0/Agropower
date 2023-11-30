@@ -82,6 +82,7 @@ body {
     font-weight: 700;
     line-height: normal;
 }
+
 .date {
     color: #403008;
     font-family: 'Open Sans';
@@ -101,7 +102,15 @@ body {
     line-height: normal;
     text-decoration-line: underline;
 }
+
 input[type="date"]::before {
-    content: '\00a0'; /* Adiciona um espaço não quebrável como conteúdo antes do texto */
-    padding-right: 10px; /* Adiciona padding apenas no lado direito do texto */
-  }
+    content: '\00a0';
+    /* Adiciona um espaço não quebrável como conteúdo antes do texto */
+    padding-right: 10px;
+    /* Adiciona padding apenas no lado direito do texto */
+}
+
+.geral {
+    /* display: flex; */
+    margin-left: 17%;
+}

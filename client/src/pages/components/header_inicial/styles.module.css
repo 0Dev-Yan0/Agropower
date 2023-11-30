@@ -3,7 +3,7 @@
     --cor-fonte: #FFEDBF;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -25,15 +25,27 @@ header {
 .separacao {
     font-size: 15px;
 }
-.cadastro{
+
+.cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3px;
     color: var(--cor-fonte);
 }
-.geral_header{
-    display: flex;
-    justify-content: space-between;
-    gap: 80%;
+
+.geral_header {
+    display: grid;
+    grid-template-columns: 95% 5%;
+    gap: 30%;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFEDBF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
