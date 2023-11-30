@@ -5,13 +5,13 @@ const rotaCadastro = Router();
 
 rotaCadastro.get("/", (req,res) => {
     res.send({ mensagem: "Get feito com sucesso na rota de cadastro!" });
-    console.warn("Ocorreu um get na: | rotaCadastro |");
+    console.warn("Ocorreu um GET na: | rotaCadastro |");
 });
 
 rotaCadastro.post("/", (req,res) => {
     // users.push()
     res.send({ mensagem: "Cadastro feito com sucesso!" });
-    console.warn("Aconteceu um post na: | rotaCadastro |");
+    console.warn("Ocorreu um POST na: | rotaCadastro |");
 });
 
 module.exports = rotaCadastro;
