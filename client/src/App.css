@@ -1,22 +1,32 @@
+/*! Nos arquivos de estilo não utilizem pont e vírgula [ ; ] após os bigodes [ {} ], pois isso quebra a continuidade deles; */
+
 .App {
   text-align: center;
 }
-
-.Api-mensagem {
-  color: white;
-  background-color: black;
-  font-size: 150px;
-};
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes colorir {
+  0% {
+    color: rebeccapurple;
+  }
+  25% {
+    color: royalblue;
+  }
+  50% {
+    color: teal;
+  }
+  75% {
+    color: royalblue;
+  }
+  100% {
+    color: rebeccapurple;
+  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Api_mensagem {
+  position: absolute;
+  bottom: 5px;
+  font-size: 50px;
+  font-weight: 600;
+  animation: colorir 3s infinite linear; 
 }
 
 .App-header {
@@ -32,13 +42,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
