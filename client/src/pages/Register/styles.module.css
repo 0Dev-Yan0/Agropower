@@ -51,7 +51,16 @@ body {
     border: 1px solid #403008;
     background: #FFEDBF;
     box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.maps{
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #403008;
+    background: #FFEDBF;
+    box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 12px;
 }
 
 .titulo {
@@ -110,6 +119,12 @@ input[type="date"]::before {
     /* Adiciona padding apenas no lado direito do texto */
 }
 
+input[type="text"]::before {
+    /* content: '\00a0'; */
+    /* Adiciona um espaço não quebrável como conteúdo antes do texto */
+    padding-right: 10px;
+    /* Adiciona padding apenas no lado direito do texto */
+}
 .geral {
     /* display: flex; */
     margin-left: 17%;

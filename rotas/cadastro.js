@@ -4,16 +4,24 @@ const users = [ ]; //! Lista que vai armazenar os dados recebidos da requisiçã
 const rotaCadastro = Router();
 
 rotaCadastro.get("/", (req,res) => {
-    res.send({ mensagem: "Get feito com sucesso na rota de cadastro!" });
-    console.warn("Ocorreu um GET na: | rotaCadastro |");
+    try {
+        res.send({ mensagem: "GET em rotaCadastro funcionando corretamente :)" });
+        console.warn("Ocorreu um GET na: | rotaCadastro |");
+    } catch (error) {
+        res.status(500);
+        res.send(error.message);
+    };
 });
 
 rotaCadastro.post("/", (req,res) => {
-    // users.push()
-    res.send({ mensagem: "Cadastro feito com sucesso!" });
+    try {
+    res.send({ mensagem: "POST em rotaCadastro funcionando corretamente :)" });
     console.warn("Ocorreu um POST na: | rotaCadastro |");
+    } catch (error) {
+        res.status(500);
+        res.send(error.message);
+    };
 });
 
 module.exports = rotaCadastro;
-
 //! Propósito de envio automatizado para o banco de dados;

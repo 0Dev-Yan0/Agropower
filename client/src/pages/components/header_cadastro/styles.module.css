@@ -35,8 +35,5 @@ header {
 .geral_header{
     display: flex;
     justify-content: space-between;
-    gap: 80%;
-}
-Link{
-    text-decoration: none;
+    gap: 240px;
 }
