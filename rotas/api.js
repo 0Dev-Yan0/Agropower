@@ -5,8 +5,9 @@ const rotaApi = Router(); //! Criação da rota;
 rotaApi.get("/", (req,res) => {
     try {
         res.send({ 
-        mensagem: "API funcionando corretamente :)",
+        mensagem: "GET em rotaApi funcionando corretamente :)",
         teste: "Teste funcionou legal bro"});
+        console.warn("Ocorreu um GET na: | rotaApi |");
     } catch (error) {
         res.status(500);
         res.send(error.message);
@@ -15,11 +16,12 @@ rotaApi.get("/", (req,res) => {
 
 rotaApi.post("/", (req,res) => {
     try {
-        res.send({ mensagem: "Ocorreu um POST na: | rotaApi |" });
+        res.send({ mensagem: "POST em rotaApi funcionando corretamente :)" });
+        console.warn("Ocorreu um POST na: | rotaApi |");
     } catch (error) {
         res.status(500);
         res.send(error.message);
-    }
+    };
 }); //! O mesmo tipo de metodologia da acima será usada aqui para garantir melhor estrutura e prevenção;
 
 module.exports = rotaApi; //! Exportarndo a rota para que ela seja utilizada pelo servidor [ server.js ];
